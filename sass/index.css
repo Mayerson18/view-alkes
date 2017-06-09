@@ -1,0 +1,119 @@
+/*GENERAL**/
+body {
+  font-family: 'Ek Mukta', sans-serif; }
+
+.boton {
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #ec1923; }
+
+.container {
+  padding-left: 39px; }
+
+.ovalo-negro {
+  width: 17px;
+  height: 17px;
+  background-color: #535353;
+  border-radius: 15px; }
+
+.ovalo-blanco {
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 6%;
+  margin-left: 1rem; }
+
+.raya {
+  width: 142px;
+  border-bottom: 4px solid #535353;
+  position: relative;
+  top: 38%;
+  left: 100%; }
+
+.card-content {
+  /*opacity: 0.2;*/
+  height: 585px;
+  background-color: #d8d8d8; }
+
+.mas {
+  font-weight: 500;
+  font-size: 30px;
+  color: #ffffff !important;
+  letter-spacing: 0.2px;
+  line-height: 1.45;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #535353;
+  width: 100%; }
+
+.p-card {
+  font-weight: normal;
+  font-size: 20px;
+  color: #464646 !important;
+  letter-spacing: 0.3px;
+  line-height: 1.45; }
+
+/*************/
+.nav {
+  background-image: linear-gradient(to right, #ffffff, #d40008); }
+
+.nav-item {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff !important;
+  letter-spacing: initial;
+  line-height: initial; }
+
+.negrita {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff !important;
+  letter-spacing: initial;
+  line-height: initial; }
+
+.tit {
+  font-weight: 600;
+  font-size: 60px;
+  color: #232323 !important;
+  letter-spacing: initial;
+  line-height: 0.93; }
+
+.tit2 {
+  font-weight: 600;
+  font-size: 45px;
+  color: #464646 !important;
+  letter-spacing: -0.1px;
+  line-height: initial; }
+
+.tit3 {
+  font-weight: 600;
+  font-size: 35px;
+  color: #ffffff !important;
+  letter-spacing: -0.1px;
+  line-height: initial; }
+
+.subtit {
+  font-weight: 600;
+  font-size: 25px;
+  color: #464646 !important;
+  letter-spacing: initial;
+  line-height: initial; }
+
+.sub-content {
+  font-weight: normal;
+  font-size: 18px;
+  color: #464646 !important;
+  letter-spacing: 0.1px;
+  line-height: 1.22; }
+
+.sub-content2 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #464646 !important;
+  letter-spacing: 0.3px;
+  line-height: 1.45; }
+
+.h {
+  background-color: #ec1923; }
+
+/*# sourceMappingURL=index.css.map */

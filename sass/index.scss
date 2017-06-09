@@ -1,0 +1,109 @@
+$blanco: #ffffff;
+$rojo: #ec1923;
+$negro-texto: #464646;
+$negro-ovalo: #535353;
+
+@mixin textos($weight,$font,$color,$l,$l2) {
+  font-weight: $weight;
+  font-size: $font;
+  color: $color !important;
+  letter-spacing:$l;
+  line-height: $l2;
+}
+
+
+@mixin ovalo($width,$back) {
+  width: $width;
+  height: $width;
+  background-color: $back;
+  border-radius: 15px;
+}
+
+/*GENERAL**///
+body{
+  font-family: 'Ek Mukta', sans-serif;
+}
+
+.boton{
+  border-color: transparent;
+  color: $blanco;
+  background-color: $rojo;
+}
+
+.container{
+  padding-left: 39px;
+}
+
+.ovalo-negro{
+  @include ovalo(17px,$negro-ovalo);
+}
+
+.ovalo-blanco{
+  @include ovalo(28px,$blanco);
+  margin-top: 6%;
+  margin-left: 1rem;
+}
+
+.raya{
+  width: 142px;
+  border-bottom: 4px solid $negro-ovalo;
+  position: relative;
+  top: 38%;
+  left: 100%;
+}
+
+.card-content{
+  /*opacity: 0.2;*/
+  height: 585px;
+  background-color: #d8d8d8;
+}
+
+.mas{
+  @include textos(500,30px,$blanco,.2px,1.45);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: $negro-ovalo;
+  width: 100%;
+}
+
+.p-card{
+  @include textos(normal,20px,$negro-texto,.3px,1.45);
+}
+/*************/
+
+.nav{
+  background-image: linear-gradient(to right, $blanco, #d40008);
+}
+
+.nav-item{
+  @include textos(300,18px,$blanco,initial,initial);
+}
+
+.negrita{
+  @include textos(600,18px,$blanco,initial,initial);
+}
+
+.tit{
+  @include textos(600,60px,#232323,initial,.93);
+}
+
+.tit2{
+  @include textos(600,45px,$negro-texto,-.1px,initial);
+}
+
+.tit3{
+  @include textos(600,35px,$blanco,-.1px,initial);
+}
+
+.subtit{
+  @include textos(600,25px,$negro-texto,initial,initial);
+}
+
+.sub-content{
+  @include textos(normal,18px,$negro-texto,.1px,1.22);
+}
+
+.sub-content2{
+  @include textos(normal,20px,$negro-texto,.3px,1.45);
+}
+
+.h{background-color: $rojo;}
