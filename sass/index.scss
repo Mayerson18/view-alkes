@@ -65,13 +65,31 @@ body{
   width: 100%;
 }
 
-.p-card{
-  @include textos(normal,20px,$negro-texto,.3px,1.45);
+.img-equipo{
+  width: 243px;
+  height: 243px;
+  margin-left: 25%;
 }
-/*************/
+
+.img-eventos{
+  width: 100%;
+  height: 188px;
+}
+
+.registrarme{
+  width: 100%;
+  position: relative;
+  top: -8px;
+}
+
+.h{background-color: $rojo;}
 
 .nav{
   background-image: linear-gradient(to right, $blanco, #d40008);
+}
+
+.r{
+  background-image: linear-gradient(to left, $blanco, #d40008);
 }
 
 .nav-item{
@@ -90,12 +108,27 @@ body{
   @include textos(600,45px,$negro-texto,-.1px,initial);
 }
 
+.tit2-custom{
+  @extend .tit2;
+  margin-bottom: 0px !important;
+}
+
 .tit3{
   @include textos(600,35px,$blanco,-.1px,initial);
 }
 
 .subtit{
   @include textos(600,25px,$negro-texto,initial,initial);
+}
+
+.subtit2{
+  @include textos(600,40px,#242424,-.1px,initial);
+  text-align: center;
+}
+
+.subtit3{
+  @include textos(600,30px,#5d5d5d,-.1px,initial);
+  text-align: center;
 }
 
 .sub-content{
@@ -106,4 +139,26 @@ body{
   @include textos(normal,20px,$negro-texto,.3px,1.45);
 }
 
-.h{background-color: $rojo;}
+.p-cv{
+  @include textos(normal,20px,#8f8e8e,.3px,1.45);
+}
+
+.p-card{
+  @include textos(normal,20px,$negro-texto,.3px,1.45);
+}
+
+.city{
+  @include textos(normal,20px,#242424,-.1px,initial);
+}
+
+.descripcion{
+  @include textos(600,30px,#242424,-.1px,1.17);
+}
+
+.direccion{
+  @include textos(300,20px,#242424,-.1px,initial);
+}
+
+.fecha{
+  @include textos(600,20px,$rojo,-.1px,initial);
+}
