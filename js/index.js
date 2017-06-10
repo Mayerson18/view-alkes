@@ -7,3 +7,12 @@ $(".nav-toggle").click(function() {
     $(".nav-menu").children().addClass("r");
   }
 });
+
+
+$(".modal-background").click(function(){
+  $(".modal").removeClass("is-active");
+})
+
+$(".modal-close").click(function(){
+  $(".modal").removeClass("is-active");
+})

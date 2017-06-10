@@ -2,10 +2,46 @@
 body {
   font-family: 'Ek Mukta', sans-serif; }
 
-.boton {
+.modal-content {
+  background-color: #ffffff;
+  width: 800px;
+  padding-right: 40px;
+  padding-left: 40px; }
+
+.modal-content > p {
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #464646 !important;
+  letter-spacing: 0.3px;
+  line-height: 1.45; }
+
+.modal-content > strong {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #464646 !important;
+  letter-spacing: 0.3px;
+  line-height: 1.45; }
+
+.boton, .boton-contact {
   border-color: transparent;
   color: #ffffff;
   background-color: #ec1923; }
+
+.boton-contact {
+  font-weight: 600;
+  font-size: 45px;
+  color: #ffffff !important;
+  letter-spacing: -0.1px;
+  line-height: initial;
+  text-align: left;
+  width: 100%; }
+
+.center {
+  text-align: center;
+  position: relative;
+  top: -8px; }
 
 .container {
   padding-left: 39px; }
@@ -35,6 +71,30 @@ body {
   /*opacity: 0.2;*/
   height: 585px;
   background-color: #d8d8d8; }
+
+.footer {
+  height: 233px;
+  background-color: #323232; }
+
+.contact {
+  position: relative;
+  top: 200px; }
+
+.text-footer {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff !important;
+  letter-spacing: -0.1px;
+  line-height: 1.15;
+  text-align: center; }
+
+.datos-footer {
+  font-weight: normal;
+  font-size: 15px;
+  color: #ffffff !important;
+  letter-spacing: -0.1px;
+  line-height: initial;
+  letter-spacing: -0.1px; }
 
 .mas {
   font-weight: 500;
@@ -185,5 +245,18 @@ body {
   color: #ec1923 !important;
   letter-spacing: -0.1px;
   line-height: initial; }
+
+.tit-mini {
+  font-weight: normal;
+  font-size: 30px;
+  color: #5d5d5d !important;
+  letter-spacing: -0.1px;
+  line-height: initial; }
+
+.box-contact {
+  height: 574px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=index.css.map */
