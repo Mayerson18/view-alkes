@@ -140,6 +140,7 @@ body {
   top: -8px; }
 
 .box-contact {
+  width: 88%;
   height: 574px;
   border-radius: 12px;
   background-color: #ffffff;

@@ -1,5 +1,5 @@
-@import "varymixins";
-@import "paddymar";
+@import "varymixins";//variables y mixins
+@import "paddymar";//paddings y margenes
 
 /*GENERAL**///
 body{ font-family: 'Ek Mukta', sans-serif; }
@@ -113,6 +113,7 @@ body{ font-family: 'Ek Mukta', sans-serif; }
 }
 
 .box-contact{
+  width: 88%;
   height: 574px;
   border-radius: 12px;
   background-color: $blanco;
@@ -169,3 +170,7 @@ body{ font-family: 'Ek Mukta', sans-serif; }
 .fecha{@include textos(600,20px,$rojo,-.1px,initial);}
 
 .tit-mini{@include textos(normal,30px,#5d5d5d,-.1px,initial);}
+
+@media(max-width:768px){
+  .contact{position: static !important;}
+}
