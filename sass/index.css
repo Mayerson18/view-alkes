@@ -2,9 +2,18 @@
 body {
   font-family: 'Ek Mukta', sans-serif; }
 
+.img-logo {
+  position: absolute;
+  top: 1px;
+  max-height: 97px;
+  z-index: 11; }
+
+.info {
+  margin-bottom: 10px; }
+
 .modal-content {
   background-color: #ffffff;
-  width: 800px;
+  width: 1100px;
   padding-right: 40px;
   padding-left: 40px; }
 
@@ -43,14 +52,25 @@ body {
   position: relative;
   top: -8px; }
 
-.container {
+.mg-t-90 {
+  margin-top: 90px !important; }
+
+.mg-b-120 {
+  margin-bottom: 120px !important; }
+
+.pd-l-39 {
   padding-left: 39px; }
+
+.pd-t-28 {
+  padding-top: 28px; }
 
 .ovalo-negro {
   width: 17px;
   height: 17px;
   background-color: #535353;
-  border-radius: 15px; }
+  border-radius: 15px;
+  position: relative;
+  left: -17px; }
 
 .ovalo-blanco {
   width: 28px;
@@ -68,7 +88,6 @@ body {
   left: 100%; }
 
 .card-content {
-  /*opacity: 0.2;*/
   height: 585px;
   background-color: #d8d8d8; }
 
@@ -119,6 +138,12 @@ body {
   width: 100%;
   position: relative;
   top: -8px; }
+
+.box-contact {
+  height: 574px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
 
 .h {
   background-color: #ec1923; }
@@ -252,11 +277,5 @@ body {
   color: #5d5d5d !important;
   letter-spacing: -0.1px;
   line-height: initial; }
-
-.box-contact {
-  height: 574px;
-  border-radius: 12px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,32 +1,19 @@
-$blanco: #ffffff;
-$rojo: #ec1923;
-$negro-texto: #464646;
-$negro-ovalo: #535353;
-
-@mixin textos($weight,$font,$color,$l,$l2) {
-  font-weight: $weight;
-  font-size: $font;
-  color: $color !important;
-  letter-spacing:$l;
-  line-height: $l2;
-}
-
-
-@mixin ovalo($width,$back) {
-  width: $width;
-  height: $width;
-  background-color: $back;
-  border-radius: 15px;
-}
+@import "varymixins";
+@import "paddymar";
 
 /*GENERAL**///
-body{
-  font-family: 'Ek Mukta', sans-serif;
+body{ font-family: 'Ek Mukta', sans-serif; }
+
+.img-logo{
+  position: absolute;
+  top: 1px;
+  max-height: 97px;
+  z-index: 11;
 }
 
 .modal-content{
   background-color: $blanco;
-  width: 800px;
+  width: 1100px;
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -60,13 +47,7 @@ body{
   top: -8px;
 }
 
-.container{
-  padding-left: 39px;
-}
-
-.ovalo-negro{
-  @include ovalo(17px,$negro-ovalo);
-}
+.ovalo-negro{  @include ovalo(17px,$negro-ovalo); position: relative; left: -17px; }
 
 .ovalo-blanco{
   @include ovalo(28px,$blanco);
@@ -83,7 +64,6 @@ body{
 }
 
 .card-content{
-  /*opacity: 0.2;*/
   height: 585px;
   background-color: #d8d8d8;
 }
@@ -132,44 +112,35 @@ body{
   top: -8px;
 }
 
+.box-contact{
+  height: 574px;
+  border-radius: 12px;
+  background-color: $blanco;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
 .h{background-color: $rojo;}
 
-.nav{
-  background-image: linear-gradient(to right, $blanco, #d40008);
-}
+.nav{@include back-rojo(to right);}
 
-.r{
-  background-image: linear-gradient(to left, $blanco, #d40008);
-}
+.r{@include back-rojo(to left);}
 
-.nav-item{
-  @include textos(300,18px,$blanco,initial,initial);
-}
+.nav-item{@include textos(300,18px,$blanco,initial,initial);}
 
-.negrita{
-  @include textos(600,18px,$blanco,initial,initial);
-}
+.negrita{@include textos(600,18px,$blanco,initial,initial);}
 
-.tit{
-  @include textos(600,60px,#232323,initial,.93);
-}
+.tit{@include textos(600,60px,#232323,initial,.93);}
 
-.tit2{
-  @include textos(600,45px,$negro-texto,-.1px,initial);
-}
+.tit2{@include textos(600,45px,$negro-texto,-.1px,initial);}
 
 .tit2-custom{
   @extend .tit2;
   margin-bottom: 0px !important;
 }
 
-.tit3{
-  @include textos(600,35px,$blanco,-.1px,initial);
-}
+.tit3{@include textos(600,35px,$blanco,-.1px,initial);}
 
-.subtit{
-  @include textos(600,25px,$negro-texto,initial,initial);
-}
+.subtit{@include textos(600,25px,$negro-texto,initial,initial);}
 
 .subtit2{
   @include textos(600,40px,#242424,-.1px,initial);
@@ -181,45 +152,20 @@ body{
   text-align: center;
 }
 
-.sub-content{
-  @include textos(normal,18px,$negro-texto,.1px,1.22);
-}
+.sub-content{@include textos(normal,18px,$negro-texto,.1px,1.22);}
 
-.sub-content2{
-  @include textos(normal,20px,$negro-texto,.3px,1.45);
-}
+.sub-content2{@include textos(normal,20px,$negro-texto,.3px,1.45);}
 
-.p-cv{
-  @include textos(normal,20px,#8f8e8e,.3px,1.45);
-}
+.p-cv{@include textos(normal,20px,#8f8e8e,.3px,1.45);}
 
-.p-card{
-  @include textos(normal,20px,$negro-texto,.3px,1.45);
-}
+.p-card{@include textos(normal,20px,$negro-texto,.3px,1.45);}
 
-.city{
-  @include textos(normal,20px,#242424,-.1px,initial);
-}
+.city{@include textos(normal,20px,#242424,-.1px,initial);}
 
-.descripcion{
-  @include textos(600,30px,#242424,-.1px,1.17);
-}
+.descripcion{@include textos(600,30px,#242424,-.1px,1.17);}
 
-.direccion{
-  @include textos(300,20px,#242424,-.1px,initial);
-}
+.direccion{@include textos(300,20px,#242424,-.1px,initial);}
 
-.fecha{
-  @include textos(600,20px,$rojo,-.1px,initial);
-}
+.fecha{@include textos(600,20px,$rojo,-.1px,initial);}
 
-.tit-mini{
-  @include textos(normal,30px,#5d5d5d,-.1px,initial);
-}
-
-.box-contact{
-  height: 574px;
-  border-radius: 12px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-}
+.tit-mini{@include textos(normal,30px,#5d5d5d,-.1px,initial);}

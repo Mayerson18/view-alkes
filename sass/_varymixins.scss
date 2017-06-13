@@ -1,0 +1,23 @@
+$blanco: #ffffff;
+$rojo: #ec1923;
+$negro-texto: #464646;
+$negro-ovalo: #535353;
+
+@mixin back-rojo($to) {
+  background-image: linear-gradient($to, $blanco, #d40008);
+}
+
+@mixin textos($weight,$font,$color,$l,$l2) {
+  font-weight: $weight;
+  font-size: $font;
+  color: $color !important;
+  letter-spacing:$l;
+  line-height: $l2;
+}
+
+@mixin ovalo($width,$back) {
+  width: $width;
+  height: $width;
+  background-color: $back;
+  border-radius: 15px;
+}
